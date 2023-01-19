@@ -1,6 +1,7 @@
 const http = require('http');
 const { v4: uuidv4 } = require('uuid');
 const errorHandle = require('./errorHandle');
+const todos = [];
 
 const request = (req, res) => { 
   const headers = {

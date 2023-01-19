@@ -1,12 +1,6 @@
 const http = require('http');
 const { v4: uuidv4 } = require('uuid');
 const errorHandle = require('./errorHandle');
-const todos = [
-  {
-    "title": "今天要刷牙",
-    "id": uuidv4()
-  }
-];
 
 const request = (req, res) => { 
   const headers = {
